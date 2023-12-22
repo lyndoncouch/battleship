@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <button onclick="createGame()">Create Game</button>
+    <main>
+    </main>
+    Ships <select id="ships">
+    <option value="Carrier:5">Carrier</option>
+    <option value="Battleship:4">Battleship</option>
+    <option value="Cruser:3">Cruser</option>
+    <option value="Submarine:3">Submarine</option>
+    <option value="Destroyer:2">Destroyer</option>
+    </select>
+    Direction <select id="direction">
+    <option value="DOWN">Down</option>
+    <option value="ACROSS">Across</option>
+    </select>
+    <script src="p5js.js"></script>
+  </body>
+</html>

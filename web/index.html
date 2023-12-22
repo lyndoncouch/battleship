@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="./ui.js"></script>
+  </head>
+  <body>
+	<header>
+	  <h1>Couch's Battleships</h1>
+	  <nav>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+	  </nav>
+	</header>
+
+	<section>
+	  <h2>A battleships game.</h2>
+	  <p>Create a Game, and mail the other player the link returned</h2>
+	  <p>Start by setting up your ships</p>
+	</section>
+	
+	<div>		
+		<button onclick="createGame()" type="button">Create Game</button>
+	</div>
+	<div class="game">
+		<div id="info"></div>
+			<div class="player" id="p1"><h1>P1</h1>
+				<form id="p1setup">
+					<p>Ship: <select id="ships"></select></p>
+					<p>Position: <input type="text" id="position"/></p>
+					<p>Direction: <select id="direction">
+						<option value="DOWN">Down</option>
+						<option value="ACROSS">Across</option>
+					</select></p>
+				</form>
+				<button onclick="addShip()">Add Ship</button>
+				<div id="board1">
+
+				</div>
+
+
+
+			</div>
+		<div class="player" id="p2">P2</div>
+	</game>
+
+
+	<footer>
+	  <p>© 2023 by Me. All rights reserved.</p>
+	</footer>
+  </body>
+</html>
